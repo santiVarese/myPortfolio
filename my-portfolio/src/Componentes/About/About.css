@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+.title {
+  background-image: linear-gradient(43deg);
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.block-text {
+  font-size: 50px;
+  font-weight: 700;
+}
+.fade-animation {
+  -webkit-animation-name: fade-in-up;
+  animation-name: fade-in-up;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.textoDePresentacion {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  color: white;
+  margin-left: 20vw;
+}
+
+.texto {
+  color: white;
+}
+
+.lenguajesBootcamp {
+  width: 30vw;
+  height: 30vh;
+  margin-left: 55vw;
+  color: white;
+  margin-top: -300px;
+}
+
+.listaLenguajes {
+  color: white;
+}
+
+.logoLenguajes {
+  width: 5vw;
+  height: 5vh;
+  display: flex;
+}

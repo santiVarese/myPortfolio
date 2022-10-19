@@ -1,0 +1,262 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  --bg-title1: #000000;
+  --bg-title2: #ffffff;
+  --txt-title1: #ffffff;
+}
+body {
+  background-color: #340077;
+
+  font: 1em/1.4 "Heebo", sans-serif;
+}
+
+/* Grid fallback support */
+.grid {
+  display: block;
+}
+.grid {
+  display: grid;
+  grid-auto-columns: auto;
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.grid__title,
+.grid__subtitle {
+  overflow: hidden;
+  position: relative;
+  align-self: baseline;
+  justify-self: start;
+  transform-style: preserve-3d;
+  animation: 0.9s ease-in-out blockIn forwards;
+}
+.grid__title {
+  color: var(--txt-title1);
+  background-color: var(--bg-title1);
+}
+/* Grid fallback support */
+.grid__subtitle {
+  display: inline-block;
+}
+.grid__subtitle {
+  grid-row: 2 / 2;
+  background-color: var(--bg-title2);
+}
+.grid__title h2,
+.grid__subtitle p {
+  padding: 0 1em;
+  opacity: 0;
+  animation: 1.4s 0.2s ease-in-out textIn forwards;
+}
+.mask,
+.delay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: 0.9s ease-in-out maskIn forwards;
+  background-color: #08aeea;
+  background-image: linear-gradient(90deg, #08aeea 0%, #2af598 100%);
+  transform-style: preserve-3d;
+}
+.delay {
+  animation-delay: 0.1s;
+}
+
+@keyframes maskIn {
+  0% {
+    transform: translateX(-105%);
+  }
+  100% {
+    transform: translateX(105%);
+  }
+}
+@keyframes blockIn {
+  0% {
+    transform: translateX(-105%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes textIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.imagenPerfil2 {
+  height: 400px;
+  width: 400px;
+}
+
+.imagenPerfil {
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 150px;
+  margin-top: 20%;
+}
+.contenedor {
+  display: flex;
+}
+.contendeorperfillista {
+  height: 100%;
+  width: 50%;
+
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenetc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h5 {
+  margin-bottom: -8%;
+  color: white;
+}
+
+body {
+  background-color: #2c3e50;
+}
+
+a {
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 3;
+}
+
+p {
+  color: black;
+  position: relative;
+  left: -10px;
+  font-family: "Lato";
+}
+
+@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #fff4f5;
+}
+.menu li a {
+  display: block;
+  height: em;
+  width: 5em;
+  text-indent: -500em;
+  line-height: 5em;
+  text-align: center;
+  color: #ff5c62;
+  background: #fff4f5;
+  position: relative;
+  border-bottom: 1px solid #ffe2e3;
+  transition: background 0.3s ease-in-out;
+  margin-bottom: 70px;
+}
+.menu li a:before {
+  font-family: FontAwesome;
+  speak: none;
+  text-indent: 0em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4em;
+}
+.menu li a.search:before {
+  content: "\f002";
+}
+.menu li a.archive:before {
+  content: "\f187";
+}
+.menu li a.pencil:before {
+  content: "\f040";
+}
+.menu li a.contact:before {
+  content: "\f003";
+}
+.menu li a.about:before {
+  content: "\f007";
+}
+.menu li a.home:before {
+  content: "\f015";
+}
+.menu li a:hover {
+  background: #ff5c62;
+  color: #fff;
+}
+.menu li.current a {
+  background: #ff5e5e;
+  color: #fff;
+}
+.menu li a.active {
+  background: #ff5e5e;
+  color: #fff;
+}
+.menu li a.active:after {
+  position: absolute;
+  left: 5em;
+  top: 0;
+  content: "";
+  border: 2.5em solid transparent;
+  border-left-color: #ff5c62;
+  border-width: 2.5em 1em;
+}
+.menu li {
+  position: relative;
+}
+.menu li:after {
+  content: attr(title);
+  position: absolute;
+  left: 5em;
+  top: 0;
+  height: 5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background: #ff5c62;
+  padding: 2em;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu li:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+@media screen and (max-height: 34em) {
+  .menu li {
+    font-size: 70%;
+  }
+}
