@@ -3,6 +3,7 @@ import "./Proyectos.css";
 import { Link } from "react-router-dom";
 import NavBar from "../../NavBar/NavBar";
 import videoPrimerProyecto from "../../Materiales/videoPrimerProyecto.mp4";
+import RockPaperScissors from "../../Materiales/RockPaperScissors.mp4";
 
 function Proyectos() {
   return (
@@ -18,8 +19,8 @@ function Proyectos() {
       <div className="prueba">
         <h3>HTML and CSS Project</h3>
         <p>
-          In the first project I have to do a web page with HTML, CSS, and
-          Javascript for a modal.
+          In this project I have to do a web page with HTML, CSS, and Javascript
+          for a modal.
         </p>
         <p> And then I have to do it responsive for an Iphone x12</p>
         <video width="700" height="500" controls>
@@ -33,6 +34,16 @@ function Proyectos() {
             </h5>
           </a>
         </div>
+        <h3 className="RockPaperScissors">Rock, Paper and Scissors game!</h3>
+        <video width="700" height="500" controls>
+          <source src={RockPaperScissors} type="video/mp4" />
+        </video>
+        <a href="https://github.com/santiVarese/RockPaperScissors">
+          <h5>
+            Here is the link to download de project for play and see it better
+            in your pc!{" "}
+          </h5>
+        </a>
       </div>
     </div>
   );
