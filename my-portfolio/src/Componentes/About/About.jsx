@@ -35,17 +35,16 @@ function About() {
         <p className="listaLenguajes">
           During my time at the bootcamp I learned various languages ​​such as :
         </p>
-
         <ol className="centrarLista">
-          <div className="logoLenguajes">
+          <div className="logohtml">
             <img src={html5} alt="html5" />
             <ul>HTML</ul>
           </div>
-          <div className="logoLenguajes">
+          <div className="logocss">
             <img className="logoHtml5" src={css} alt="css" />
             <ul>CSS</ul>
           </div>
-          <div className="logoLenguajes">
+          <div className="logojavascript">
             <img className="logoHtml5" src={javascript} alt="javascript" />
             <ul>JAVASCRIPT</ul>
           </div>

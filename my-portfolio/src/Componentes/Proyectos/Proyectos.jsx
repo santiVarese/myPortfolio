@@ -16,6 +16,7 @@ import responsive6 from "../../Materiales/responsive6.png";
 import responsive7 from "../../Materiales/responsive7.png";
 import responsive8 from "../../Materiales/responsive8.png";
 import modalResponsive from "../../Materiales/modalResponsive.png";
+import videoPrimerProyecto from "../../Materiales/videoPrimerProyecto.mp4";
 
 function Proyectos() {
   return (
@@ -35,83 +36,9 @@ function Proyectos() {
           Javascript for a modal.
         </p>
         <p> And then I have to do it responsive for an Iphone x12</p>
-        <div className="marcoImagen">
-          <img
-            className="imagenPagina"
-            src={imagenPagina1}
-            alt="paginaImagen1"
-          />
-          <img
-            className="imagenPagina"
-            src={imagenPagina2}
-            alt="paginaImagen2"
-          />
-          <img
-            className="imagenPagina"
-            src={imagenPagina3}
-            alt="paginaImagen3"
-          />
-          <img
-            className="imagenPaginaFooter"
-            src={imagenPagina4}
-            alt="paginaImagen4"
-          />
-        </div>
-        <div className="modalWeb">
-          <h3>This is the modal from the web visual</h3>
-          <img className="imagenPagina" src={modalWeb} alt="modalImagen" />
-        </div>
-        <h3>this is the responsive desing </h3>
-        <div className="responsive">
-          <img
-            className="imagenResponsive"
-            src={responsive1}
-            alt="paginaResponsive1"
-          />
-          <img
-            className="imagenResponsive"
-            src={responsive2}
-            alt="paginaResponsive1"
-          />
-          <img
-            className="imagenResponsive"
-            src={responsive3}
-            alt="paginaResponsive1"
-          />
-          <img
-            className="imagenResponsive"
-            src={responsive4}
-            alt="paginaResponsive1"
-          />
-          <img
-            className="imagenResponsive"
-            src={responsive5}
-            alt="paginaResponsive1"
-          />
-          <img
-            className="imagenResponsive"
-            src={responsive6}
-            alt="paginaResponsive1"
-          />
-          <img
-            className="imagenResponsive"
-            src={responsive7}
-            alt="paginaResponsive1"
-          />
-          <img
-            className="imagenResponsive"
-            src={responsive8}
-            alt="paginaResponsive1"
-          />
-        </div>
-        <h3>This is the modal for the responsive desing</h3>
-        <div className="modalResponsive">
-          <img
-            className="imagenResponsive"
-            src={modalResponsive}
-            alt="paginaResponsive2"
-          />
-        </div>
+        <video width="700" height="500" controls>
+          <source src={videoPrimerProyecto} type="video/mp4" />
+        </video>
         <div className="githubProjectLink">
           <a href="https://github.com/santiVarese/primerProyectoSenpai">
             <h5>
