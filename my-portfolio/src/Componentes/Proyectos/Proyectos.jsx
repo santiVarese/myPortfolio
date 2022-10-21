@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../../NavBar/NavBar";
 import videoPrimerProyecto from "../../Materiales/videoPrimerProyecto.mp4";
 import RockPaperScissors from "../../Materiales/RockPaperScissors.mp4";
+import randomCat from "../../Materiales/randomcats.mp4";
 
 function Proyectos() {
   return (
@@ -42,6 +43,16 @@ function Proyectos() {
           <h5>
             Here is the link to download de project for play and see it better
             in your pc!{" "}
+          </h5>
+        </a>
+        <h3 className="randomCat">Random cats project</h3>
+        <video width="700" height="500" controls>
+          <source src={randomCat} type="video/mp4" />
+        </video>
+        <a href="https://github.com/santiVarese/RockPaperScissors">
+          <h5>
+            Here is the link to download de project and see it better in your
+            pc!{" "}
           </h5>
         </a>
       </div>
