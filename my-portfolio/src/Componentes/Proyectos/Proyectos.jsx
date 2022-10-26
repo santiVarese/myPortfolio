@@ -5,6 +5,7 @@ import NavBar from "../../NavBar/NavBar";
 import videoPrimerProyecto from "../../Materiales/videoPrimerProyecto.mp4";
 import RockPaperScissors from "../../Materiales/RockPaperScissors.mp4";
 import randomCat from "../../Materiales/randomcats.mp4";
+import movieApp from "../../Materiales/movieApp.mp4";
 
 function Proyectos() {
   return (
@@ -50,6 +51,25 @@ function Proyectos() {
           <source src={randomCat} type="video/mp4" />
         </video>
         <a href="https://github.com/santiVarese/RockPaperScissors">
+          <h5>
+            Here is the link to download de project and see it better in your
+            pc!{" "}
+          </h5>
+        </a>
+        <h3 className="movieApp">The Movie App</h3>
+        <p>
+          This is an app to saerch movies and see the trailers! The trailers has
+          sound (turn down de volume just in case)
+        </p>
+        <p>I use "The Movie Data Base" API for this project</p>
+
+        <a href="https://www.themoviedb.org/">
+          <p>Click here to go to their page</p>
+        </a>
+        <video width="700" height="500" controls>
+          <source src={movieApp} type="video/mp4" />
+        </video>
+        <a href="https://github.com/santiVarese/movieApp">
           <h5>
             Here is the link to download de project and see it better in your
             pc!{" "}
